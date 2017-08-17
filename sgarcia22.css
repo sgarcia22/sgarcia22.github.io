@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+
+h1 {
+	text-align: left;
+	color: darkorange;
+	font-size: 80px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	
+}
+
+body {
+	/*
+	background-image: url(/Images/Technology_Design.jpg);
+	*/
+}
