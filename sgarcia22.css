@@ -1,14 +1,71 @@
 @charset "utf-8";
 /* CSS Document */
 
+
 h1 {
-	text-align: left;
-	color: darkorange;
+	text-align: center;
+	color: black;
 	font-size: 80px;
-	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-family: sofia, sans-serif;
+	margin-bottom: 20px;
 	
 }
 
-body {
 
+body {
+	/*background: url(Images/footer_lodyas.png);*/
+	/*background: linear-gradient(to bottom, white, black 100%);
+	background-repeat: no-repeat;*/
+}
+
+#face {
+	
+	display: block;
+	margin: auto;
+	border-radius: 50%;
+	width: 25%;
+	
+}
+
+
+#face:hover {
+	
+}
+
+.button {
+	margin-left: 50px;
+	display: inline-block;
+	border-radius: 4px;
+	background-color: white;
+	border-color: black;
+	color: black;
+	width: 230px;
+	padding: 20px;
+	cursor: pointer;
+	transition: all 0.5s;
+	font-size: 35px;
+	text-align: right;
+	
+}
+
+.button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.button span::after {
+	content: '\25bc';
+    transition: 0.5s;
+	opacity: 0;
+}
+
+.button:hover span {
+	padding-right: 25px;
+}
+
+.button:hover span::after {
+	opacity: 1;
+	right: 0;
 }
