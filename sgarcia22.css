@@ -1,16 +1,27 @@
 @charset "utf-8";
 /* CSS Document */
 
+@font-face {
+	font-family: 'title';
+	src: url(Fonts/SWEATY-BETA.OTF);
+}
+@font-face {
+	font-family: 'aesthetic';
+	src: url(Fonts/WINGDING.TTF);
+}
 
 h1 {
 	text-align: center;
 	color: black;
 	font-size: 80px;
-	font-family: sofia, sans-serif;
-	margin-bottom: 20px;
+	font-family: 'title', sans-serif;
+	margin-bottom: 35px;
 	
 }
 
+.extra {
+	font-family: 'aesthetic';
+}
 
 body {
 	/*background: url(Images/footer_lodyas.png);*/
@@ -68,4 +79,34 @@ body {
 .button:hover span::after {
 	opacity: 1;
 	right: 0;
+}
+
+button.accordion.active {
+	background-color: gray;
+}
+
+div.panel {
+	background-color: azure;
+	max-height: 0;
+	overflow: hidden;
+	transition: 0.2s ease-out;
+}
+
+#download {
+	margin-top: 50px;
+	display: inline-block;
+	border-radius: 4px;
+	background-color: white;
+	border-color: black;
+	color: black;
+	width: 300px;
+	padding: 10px;
+	cursor: pointer;
+	transition: all 0.5s;
+	font-size: 20px;
+	text-align: center;
+	
+}
+#resume {
+	display: none;
 }
