@@ -19,6 +19,15 @@ h1 {
 	
 }
 
+h2 {
+	text-align: center;
+	color: black;
+	font-size: 60px;
+	font-family: 'title', sans-serif;
+	margin-bottom: 20px;
+	
+}
+
 .extra {
 	font-family: 'aesthetic';
 }
@@ -29,19 +38,6 @@ body {
 	background-repeat: no-repeat;*/
 }
 
-#face {
-	
-	display: block;
-	margin: auto;
-	border-radius: 50%;
-	width: 25%;
-	
-}
-
-
-#face:hover {
-	
-}
 
 .button {
 	margin-left: 50px;
@@ -112,8 +108,9 @@ div.panel {
 }
 
 #portfolio {
+	align-content: center;
 	margin: auto;
-	display: inline-flex;
+	display: block;
 }
 
 .portfolio_image {
@@ -125,8 +122,14 @@ div.panel {
 	margin-left: 30px;
 }
 
+.portfolio_image:hover {
+	transition: 0.5s;
+	width: 500px;
+	height: 500px;
+}
+
 .overlay {
-	position: inherit;
+	position: fixed;
 	opacity: 0;
 	transition: .5s ease;
 	background-color: dimgray;
@@ -135,13 +138,13 @@ div.panel {
 }
 
 .image_overlay:hover .overlay {
-	opacity: 1;
+	opacity: 0.6;
 }
 
 .text {
 	color: white;
 	font-size: 20px;
-	position: relative;
+	position: inherit;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
