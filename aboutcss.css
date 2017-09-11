@@ -3,6 +3,7 @@
 
 
 #face {
+	position: relative;
 	border: 3px groove;
 	border-radius: 50%;
 	border-color: black;
