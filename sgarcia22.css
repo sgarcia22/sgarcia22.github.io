@@ -28,6 +28,17 @@ h2 {
 	
 }
 
+h3 {
+	display: inline-block;
+	text-align: center;
+	align-content: center;
+	color: black;
+	font-size: 25px;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+
+}
+
+
 .extra {
 	font-family: 'aesthetic';
 }
@@ -149,4 +160,8 @@ div.panel {
 	left: 50%;
 	transform: translate(-50%, -50%);
   	-ms-transform: translate(-50%, -50%);
+}
+
+.art {
+	display: block;
 }
