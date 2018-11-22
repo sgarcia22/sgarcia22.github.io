@@ -1,0 +1,37 @@
+h1 {
+  font-family: 'Niramit', sans-serif;
+  font-size: 100px;
+}
+
+p {
+  font-family: 'Niramit', sans-serif;
+  font-size: 30px;
+}
+
+.image:hover {
+  opacity: .8;
+  transition: .10s ease;
+  background-color: #008CBA;
+  cursor: pointer;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+      border: none;
+      color: white;
+      background-color: #008CBA;
+      padding: 5px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+      border-radius: 6px;
+}
+
+.button:hover {
+  background-color: #4CAF50;
+  color: white;
+}

@@ -1,35 +1,279 @@
-<!doctype html>
 <html>
-<head >
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="sgarcia22.css">
-	<title>Samantha Garcia's Portfolio</title>
-</head>
-	
-<body>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Niramit" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <title>Sam's Website</title>
+  </head>
+  <body>
+    <h1 align="center">Sam's Portfolio</h1>
+    <div class="row" align="center">
+      <a href="index.html"><button type="button" class="button">Projects</button></a>
+      <a href="resume.html"><button type="button" class="button">Resume</button></a>
+      <a href="about.html"><button type="button" class="button">About</button></a>
+    </div>
+    <div class="w3-content w3-display-container" align="center">
+      <div class="mySlides">
+        <div class="row">
+          <img class="image" onclick="myFunction('vergId')" src="./images/verg.png" style="width:25%">
+          <img class="image" onclick="myFunction('crowdyId')" src="./images/crowdy.png" style="width:25%; height:44%;">
+          <img class="image" onclick="myFunction('anonymousId')" src="./images/anonymous.png" style="width:25%">
+        </div>
+      </div>
+      <div class="mySlides">
+        <div class="row">
+          <img class="image" onclick="myFunction('tombDefenderId')" src="./images/tomb-defender.png" style="width:25%; height:44%;">
+          <img class="image" onclick="myFunction('astroWebId')" src="./images/astro-web.png" style="width:25%">
+          <img class="image" onclick="myFunction('voxelcadeId')" src="./images/voxelcade.png" style="width:25%">
+        </div>
+      </div>
+      <div class="mySlides">
+        <div class="row">
+          <img class="image" onclick="myFunction('holoId')" src="./images/Dr.Holo.png" style="width:25%; height:44%;">
+          <img class="image" onclick="myFunction('vrSelfDefenseId')" src="./images/vrselfdefense.jpg" style="width:25%">
+          <img class="image" onclick="myFunction('dungeonRunnerVRId')" src="./images/dungeon_runner_vr.png" style="width:25%">
+        </div>
+      </div>
+      <div class="mySlides">
+        <div class="row">
+          <img class="image" onclick="myFunction('tinfId')" src="./images/tinf_icon.png" style="width:25%">
+          <img class="image" onclick="myFunction('strandedId')" src="./images/Stranded_Icon.jpg" style="width:25%">
+          <img class="image" onclick="myFunction('initiative9Id')" src="./images/Initiative_9_Project.jpg" style="width:25%">
+        </div>
+      </div>
+      <!-- <div class="mySlides">
+        <div class="row">
+          <img class="image" onclick="myFunction('photoshopId')" src="./images/Photoshop.png" style="width:25%">
+          <img class="image" onclick="myFunction('digitalArtId')" src="./images/Digital_Art.png" style="width:25%">
+          <img class="image" onclick="myFunction('drawingId')" src="./images/drawing.png" style="width:25%">
+        </div>
+      </div> -->
+      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
 
-	<h1 style="margin-top: 100px; margin-bottom: 100px;">Samantha Garcia</h1>
-	<div align="center">
-			<a href="index.html"><button class="button" style="vertical-align: middle"><span>Portfolio</span></button></a>
-			<a href="resume.html"><button class="button" style="vertical-align: middle"><span>Resume</span></button></a>
-			<a href="about.html"><button class="button" style="vertical-align: middle; width: 200px;"><span>About</span></button></a>
-	</div>
-	
-	<div id="portfolio" align="center">
-		<a href="vrselfdefense.html"><img class="portfolio_image" src="Images/vrselfdefense.jpg" alt="VR_Self_Defense" style="width: 400px; height: 400px;"></a>
-		<br>
-		<a href="dungeonrunnervr.html"><img class="portfolio_image" src="Images/dungeon_runner_vr.png" alt="Stranded" style="width: 400px; height: 400px;"></a>
-		<a href="verg.html"><img class="portfolio_image" src="Images/verg.png" alt="VERG" style="width: 400px; height: 400px;"></a>
-		<a href="holo.html"><img class="portfolio_image" src="Images/Dr.Holo.png" alt="Dr. Holo" style="width: 400px; height: 400px;"></a>
-		<br>
-		<a href="stranded.html"><img class="portfolio_image" src="Images/Stranded_Icon.jpg" alt="Stranded" style="width: 400px; height: 400px;"></a>
-		<a href="there_is_no_floor.html"><img class="portfolio_image" src="Images/tinf_icon.png" alt="There_Is_No_Floor" style="width: 400px; height: 400px;"></a>
-		<a href="initiative_9.html"><img class="portfolio_image" src="Images/Initiative_9_Project.jpg" alt="Initiative_9" style="width: 400px; height: 400px;"></a>
-		<br>
-		<a href="photoshop.html"><img class="portfolio_image" src="Images/Photoshop.png" alt="Stranded" style="width: 400px; height: 400px;"></a>
-		<a href="digital_art.html"><img class="portfolio_image" src="Images/Digital_Art.png" alt="There_Is_No_Floor" style="width: 400px; height: 400px;"></a>
-		<a href="drawing.html"><img class="portfolio_image" src="Images/drawing.png" alt="Initiative_9" style="width: 400px; height: 400px;"></a>
-	</div>	
+    <div id="vergId" style="display: none;">
+      <h2 align="center">Virtual Experiences for Dyslexia Awarness</h2>
+      <div align="center">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/rMnfaPjMwcc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="description" style="margin: 0 auto; width:50%;">
+    		<h3>Undergraduate Research Project being developed in Unity and later going to be exported to WebGL. The project is for pediatricians-in-training to practice their screening skills for Autism Spectrum Disorder (ASD), in order to help detect ASD in the child's earlier ages. The above video is a demo of one of our updates. It is recorded by my fellow Ph.D. collaborator.</h3>
+    	</div>
+    	<div align="center">
+    		<a href="http://www.ufverg.com/"><h3 style="color: midnightblue">Check out the website for the research group!</h3></a>
+    	</div>
+    </div>
+    <div id="crowdyId" style="display: none;">
+      <h2 align="center">Crowdy</h2>
+      <div class="description" style="margin: 0 auto; width:50%;">
+    		<h3>Web app being developed for Software Engineering that finds the local Gainesville theaters, displays their movies, and shows how crowded they are based on user and employee input. I am working on the Google Maps API and the Angular front-end for the Movies Tab.</h3>
+    	</div>
+      <div align="center">
+    		<a href="https://crowdy-group2.herokuapp.com/"><h3 style="color: midnightblue">Check it out!</h3></a>
+    	</div>
+      <div align="center">
+        <a href="https://github.com/cen3031group2/Crowdy" target="_blank" style="text-decoration: none">
+          <img src="Images/GitHub-Mark-120px-plus.png" alt="Github" style="width: 50px; margin: auto;" >
+        </a>
+      </div>
+    </div>
+    <div id="anonymousId" style="display: none;">
+      <h2 align="center">Anonymous VR</h2>
+      <div class="description" style="margin: 0 auto; width:50%;">
+    		<h3>A multiplayer VR App for the Google Daydream that is being developed for GatorVR, the VR club that I run. Anonymous is an online social support group where players can meet up and have a group therapy session anonymously and freely.</h3>
+    	</div>
+      <div align="center">
+        <a href="https://github.com/UFGatorVR/Anonymous/tree/voice" target="_blank" style="text-decoration: none">
+          <img src="Images/GitHub-Mark-120px-plus.png" alt="Github" style="width: 50px; margin: auto;" >
+        </a>
+      </div>
+    </div>
+    <div id="tombDefenderId" style="display: none;">
+      <h2 align="center">Tomb Defender</h2>
+      <div class="description" style="margin: 0 auto; width:50%;">
+    		<h3>Unity 3D game being developed for the Tomb Raider Itch.io Game Jam. It features a character animated through Mixamo fighting off spawned enemys.</h3>
+    	</div>
+    </div>
+    <div id="astroWebId" style="display: none;">
+      <h2 align="center">The Astro Web</h2>
+      <div class="description" style="margin: 0 auto; width:50%;">
+    		<h3>Game made for the Game Off 2018 hosted by GitHub on Itch.io. For this year's theme, hybrid, I focused on combining different mediums of games: 2D, 3D, AR, and VR. </h3>
+    	</div>
+      <div align="center">
+    		<a href="https://itch.io/jam/game-off-2018/rate/332162"><h3 style="color: midnightblue">Here is my submission</h3></a>
+    	</div>
+    </div>
+    <div id="voxelcadeId" style="display: none;">
+      <h2 align="center">VoxelCade VR</h2>
+      <div align="center">
+        <iframe src="https://player.vimeo.com/video/302171205" width="640" height="361" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+      <div class="description" style="margin: 0 auto; width:50%;">
+    		<h3>VR Deungeon Crawler Adventure Game made for my AI for Games class. I worked on integrating VR, fighting mechanics, and the final boss, which was a whack-a-mole simulator where the moles came up with filtered randomness. We received a 4.56/5 Overall Average on Game Day Feedback and I received a 9.83/10 Peer Evaluation from my teammates.</h3>
+    	</div>
+      <div align="center">
+    		<a href="https://github.com/sgarcia22/VoxelcadeVR" target="_blank" style="text-decoration: none">
+    			<img src="Images/GitHub-Mark-120px-plus.png" alt="Github" style="width: 50px; margin: auto;" >
+    		</a>
+    	</div>
+    </div>
+    <div id="holoId" style="display: none;">
+      <h2 align="center">Dr. Holo</h2>
+    	<div align="center">
+    		<iframe src="https://player.vimeo.com/video/238241900" width="640" height="331" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    	</div>
+    	<div class="description" style="margin: 0 auto; width:50%;">
+    		<h3>Hololens AR App developed in Unity. The application focuses on optimizing patient care and reduce medical errors. The app's purpose is to provide Dr.’s and rotating medical staff “hands free” access to interact with patient information on inter-hospital secure medical database with potential to view Medical Imaging (MRI, Xray, Ultrasound) data in 3D to assist with treatment plan. I worked on initial UI design and implemented searching algorithm to retrieve patient information based on their Medical Record Number (MRN). I led four other members. </h3>
+    	</div>
+    	<div align="center">
+    		<a href="https://devpost.com/software/dr-holo" target="_blank">
+    			<img src="images/devpost_logo.png" alt="DevPost" style="width: 200px; ">
+    		</a>
+    	</div>
+    	<div align="center">
+    		<a href="https://github.com/Reality-Virtually-Hackathon/Dr.Holo" target="_blank" style="text-decoration: none">
+    			<img src="Images/GitHub-Mark-120px-plus.png" alt="Github" style="width: 50px; margin: auto;" >
+    		</a>
+    	</div>
+    </div>
+    <div id="vrSelfDefenseId" style="display: none;">
+      <h2 align="center">VR Self-Defense</h2>
+    	<div align="center">
+    		<iframe src="https://player.vimeo.com/video/252023110" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    	</div>
+    	<div class="description" style="margin: 0 auto; width:50%;">
+    		<h3>There are countless reports of people being sexually and physically assaulted everyday. This application hopes to reduce the number of those occurrences by offering a self-defense virtual reality class to the public for free.
+    		I worked on game flow, detecting sphere collision and checking if the player violated any rules or took too long to hit the spheres. I also helped set up U.I., initial scenes, music, Oculus Touch controls, and haptics.
+    		The project was developed in Unity3D in under 36 hours for the Swamphacks 2018 Hackathon and uses the Oculus Rift and Touch controllers. </h3>
+    	</div>
+    	<div align="center">
+    		<a href="https://devpost.com/software/vr-self-defense" target="_blank">
+    			<img src="images/devpost_logo.png" alt="DevPost" style="width: 200px; ">
+    		</a>
+    	</div>
+    	<div align="center">
+    		<a href="https://github.com/sgarcia22/VR-Self-Defense" target="_blank" style="text-decoration: none">
+    			<img src="Images/GitHub-Mark-120px-plus.png" alt="Github" style="width: 50px; margin: auto;" >
+    		</a>
+    	</div>
+    </div>
+    <div id="dungeonRunnerVRId" style="display: none;">
+      <h2 align="center">Dungeon Runner VR</h2>
+    	<div align="center">
+    		<iframe src="https://player.vimeo.com/video/249349021" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    	</div>
+    	<div class="description" style="margin: 0 auto; width:50%;">
+    		<h3>Unity 3D Project developed for the Google Cardboard and Android. The game is an infinite runner in which the player can rotate their heads to move sideways, jump by looking upwards and pressing the trigger button, and slide by looking downwards and pressing the trigger button. Although the project development period ran from June to December, I took approximately 2-3 months to build it. I learned more about procedural generation, how to use the Google Cardboard with Unity, effectively incorporating the Cardboard into the controls, and creating an effective yet simple User Interface to display information. </h3>
+    	</div>
+    	<div align="center">
+    		<a href="https://play.google.com/store/apps/details?id=com.BlueBunnyGamer.DungeonRunnerVR&hl=en" target="_blank">
+    			<img src="Images/google_play.png" alt="Google Play" style="width: 300px; ">
+    		</a>
+    	</div>
+    </div>
+    <div id="tinfId" style="display: none;">
+      <h2 align="center">There is no Floor</h2>
+    	<div align="center">
+    		<iframe src="https://player.vimeo.com/video/233252838" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    	</div>
 
-</body> 
+    	<div class="description" style="margin: 0 auto; width:50%;">
+    		<h3>Android 2D Platformer developed in Unity. The player dodges incoming obstacles from under them, competing against others online while trying their hand at the achievements. </h3>
+    	</div>
+    	<div align="center">
+    		<a href="https://play.google.com/store/apps/details?id=com.BlueBunnyGamer.ThereIsNoFloor&hl=en" target="_blank">
+    			<img src="Images/google_play.png" alt="Google Play" style="width: 300px; ">
+    		</a>
+    	</div>
+    	<div align="center">
+    		<a href="https://github.com/sgarcia22/There-is-no-Floor" target="_blank" style="text-decoration: none">
+    			<img src="Images/GitHub-Mark-120px-plus.png" alt="Github" style="width: 50px; margin: auto;" >
+    		</a>
+    	</div>
+    </div>
+    <div id="strandedId" style="display: none;">
+      <h2 align="center">Stranded</h2>
+    	<div align="center">
+    		<iframe src="https://player.vimeo.com/video/238283368" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    	</div>
+    	<div class="description" style="margin: 0 auto; width:50%;">
+    		<h3>Unity 3D Project developed for the Oculus Rift during the 2017 Summer Term; we had a team of five members. The user is placed in a town that has just been hit by a hurricane. The goal is to create a simulation of what to do in such a situation. I worked on creating the basic scene, constructing the water area and its script, and making the User Interface.</h3>
+    	</div>
+    	<div align="center">
+    		<a href="https://github.com/mohanzalake/Stranded" target="_blank" style="text-decoration: none">
+    			<img src="Images/GitHub-Mark-120px-plus.png" alt="Github" style="width: 50px; margin: auto;" >
+    		</a>
+    	</div>
+    </div>
+    <div id="initiative9Id" style="display: none;">
+      <h2 align="center">Initiative 9</h2>
+    	<div align="center">
+    	<iframe src="https://player.vimeo.com/video/238283414" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    	</div>
+    	<div class="description" style="margin: 0 auto; width:50%;">
+    		<h3>Programming Fundamentals 2 Project coded in C++ and Qt. I was in a team with five other members. The purpose of the game is to shoot incoming enemy spaceships and simultaneously dodge approaching bullets. I worked on the User Interface along with the art.</h3>
+    	</div>
+    	<div align="center">
+    		<a href="https://github.com/Kroronos/Term-Project-Team-9" target="_blank" style="text-decoration: none">
+    			<img src="Images/GitHub-Mark-120px-plus.png" alt="Github" style="width: 50px; margin: auto;" >
+    		</a>
+    	</div>
+    </div>
+    <!-- <div id="photoshopId" style="display: none;">
+    </div>
+    <div id="digitalArtId" style="display: none;">
+    </div>
+    <div id="drawingId" style="display: none;">
+    </div> -->
+
+    <script>
+      // from: https://www.w3schools.com/w3css/w3css_slideshow.asp
+      var slideIndex = 1;
+      showDivs(slideIndex);
+
+      var previousId = undefined;
+
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";
+        }
+        x[slideIndex-1].style.display = "block";
+      }
+      // end code from w3schools
+
+      function myFunction(id) {
+        console.log (id);
+        if (previousId != undefined) {
+          vartemp = document.getElementById(previousId);
+          vartemp.style.display = "none";
+          previousId = id;
+        }
+        else {
+          previousId = id;
+        }
+        var e = document.getElementById(id);
+        if (e.style.display === "none") {
+            e.style.display = "block";
+        } else {
+            e.style.display = "none";
+        }
+      }
+
+    </script>
+
+    </body>
+  </body>
 </html>
